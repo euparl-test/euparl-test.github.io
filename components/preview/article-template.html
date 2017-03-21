@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.1.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.1.0" type="text/css">
+
+
+<title>Error rendering component article-template | Bits of 24 ways</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame Frame--full" id="frame">
+
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>(unknown path)
+  Template render error: (<a class="c-menu" href="#navigation">
+  {% include &quot;menu.svg&quot; %}
+  <span class="u-hidden">Jump to menu</span>
+</a>
+)
+  Error: template not found: menu.svg</p>
+
+    </div>
+    
+    <code class="Error-stack">
+        <pre>Template render error: (unknown path)
+  Template render error: (<a class="c-menu" href="#navigation">
+  {% include "menu.svg" %}
+  <span class="u-hidden">Jump to menu</span>
+</a>
+)
+  Error: template not found: menu.svg
+    at Object.exports.prettifyError (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/lib.js:34:15)
+    at /Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:486:31
+    at eval (eval at _compile (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:560:47), <anonymous>:17:11)
+    at /Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:494:25
+    at eval (eval at _compile (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:560:47), <anonymous>:10:11)
+    at createTemplate (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:212:25)
+    at next (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/lib.js:210:13)
+    at handle (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:252:25)
+    at /Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:263:21
+    at next (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/lib.js:207:13)
+    at handle (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:252:25)
+    at /Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:263:21
+    at next (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/lib.js:207:13)
+    at Object.exports.asyncIter (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/lib.js:214:5)
+    at new_cls.getTemplate (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:242:17)
+    at new_cls.root [as rootRenderFunc] (eval at _compile (/Users/Markus_Seyfferth/24ways-demo/node_modules/nunjucks/src/environment.js:560:47), <anonymous>:9:5)</pre>
+    </code>
+    
+</div>
+
+
+</div>
+
+
+
+
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
+
+
+
+</body>
+</html>
