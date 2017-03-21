@@ -9,14 +9,14 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="assets/icons/icon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../assets/icons/icon.ico" type="image/ico">
 
-<link rel="stylesheet" href="fractal/css/default.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../fractal/css/default.css?cachebust=1.1.0" type="text/css">
 
-<link rel="stylesheet" href="assets/styles/theme.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../assets/styles/theme.css?cachebust=1.1.0" type="text/css">
 
 
-<title>Bits, the front-end component library for 24 ways | Bits of 24 ways</title>
+<title>Design tokens | Bits of 24 ways</title>
 
 </head>
 <body>
@@ -39,7 +39,7 @@
 </svg>
 
     </button>
-    <a href="" class="Header-title" data-pjax>Bits of 24 ways</a>
+    <a href="../.." class="Header-title" data-pjax>Bits of 24 ways</a>
 </div>
 
     </div>
@@ -54,7 +54,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Bits, the front-end component library for 24 ways</h1>
+        <h1 class="Document-title">Design tokens</h1>
         
 
 
@@ -71,19 +71,284 @@
 
     
     
-    <p>You are viewing the front-end component library for 24 ways. It is powered by <a href="http://fractal.build">Fractal</a>, a tool that enables the rapid development of components, templates and pages.</p>
-<h3 id="component-categories">Component categories</h3>
-<ul>
-<li><strong>Utilities:</strong> Components with a single purpose and specific role</li>
-<li><strong>Common:</strong> Components that may appear anywhere on the site</li>
-<li><strong>Global:</strong> Components that appear on every page on the site</li>
-<li><strong>Layout:</strong> Components concerned with macro layout</li>
-<li><strong>Scopes:</strong> Components used to style scoped areas of content</li>
-<li><strong>Templates:</strong> Templates for particular page types</li>
-</ul>
-<h3 id="source-code">Source code</h3>
-<p>The <a href="https://github.com/24ways/frontend">source code is available on GitHub</a>. See the <a href="https://github.com/24ways/frontend/blob/master/README.md">README</a> for installation instructions.</p>
-<iframe src="https://ghbtns.com/github-btn.html?user=24ways&repo=frontend&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    <p><a href="https://medium.com/eightshapes-llc/25dd82d58421">Design tokens</a> are named entities that store visual design information. These are used in place of hard-coded values (such as hex values for color or pixels for spacing) in order to maintain a scalable, consistent system for UI development.</p>
+<h2 id="colour-palettes">Colour Palettes</h2>
+<p><strong>Primary</strong> palette values. Accessed via <code>map(colors, primary, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: #f04">
+    <span>#f04</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: #c02">
+    <span>#c02</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: #601">
+    <span>#601</span>
+    <code>dark</code>
+  </div>
+</div>
+
+
+<p><strong>Secondary</strong> palette values. Accessed via <code>map(colors, secondary, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: #3be">
+    <span>#3be</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: #269">
+    <span>#269</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: #257">
+    <span>#257</span>
+    <code>dark</code>
+  </div>
+</div>
+
+
+<p><strong>Neutral</strong> palette values. Accessed via <code>map(colors, neutral, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: #efeff0">
+    <span>#efeff0</span>
+    <code>lightest</code>
+  </div>
+<div class="color" style="color: #b9b9c0">
+    <span>#b9b9c0</span>
+    <code>lighter</code>
+  </div>
+<div class="color" style="color: #8c8c9c">
+    <span>#8c8c9c</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: #778">
+    <span>#778</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: #636373">
+    <span>#636373</span>
+    <code>dark</code>
+  </div>
+<div class="color" style="color: #3f3f46">
+    <span>#3f3f46</span>
+    <code>darker</code>
+  </div>
+<div class="color" style="color: #1f1f20">
+    <span>#1f1f20</span>
+    <code>darkest</code>
+  </div>
+</div>
+
+
+
+<h2 id="borders">Borders</h2>
+<p>Width and radii tokens are used to style element borders. Accessed via <code>map(borders, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width-thin</code></td>
+<td>1px</td>
+</tr>
+<tr>
+<td><code>width-thick</code></td>
+<td>2px</td>
+</tr>
+<tr>
+<td><code>width-thicker</code></td>
+<td>4px</td>
+</tr>
+<tr>
+<td><code>width-thickest</code></td>
+<td>8px</td>
+</tr>
+<tr>
+<td><code>radius-small</code></td>
+<td>0.125rem</td>
+</tr>
+<tr>
+<td><code>radius-default</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>radius-circle</code></td>
+<td>50%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="breakpoints">Breakpoints</h2>
+<p>Breakpoint tokens are used within <code>@media</code> queries. Accessed via <code>map(breakpoints, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>min</code></td>
+<td>280px</td>
+</tr>
+<tr>
+<td><code>xsmall</code></td>
+<td>360px</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>480px</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>504px</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>800px</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>960px</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>1280px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="font-families">Font families</h2>
+<p>Font family tokens are used for typographic styling. Accessed via <code>map(fonts, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>family-sans</code></td>
+<td><span style="font: 1.25em/1 'Source Sans Pro', sans-serif">‘Source Sans Pro’, sans-serif</span></td>
+</tr>
+<tr>
+<td><code>family-serif</code></td>
+<td><span style="font: 1.25em/1 'Source Serif Pro', serif">‘Source Serif Pro’, serif</span></td>
+</tr>
+<tr>
+<td><code>family-monospace</code></td>
+<td><span style="font: 1.25em/1 'Source Code Pro', monospace">‘Source Code Pro’, monospace</span></td>
+</tr>
+<tr>
+<td><code>family-system</code></td>
+<td><span style="font: 1.25em/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">-apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto, Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="layers">Layers</h2>
+<p>Layering tokens set the <code>z-index</code> layer value for elements. Accessed via <code>map(layers, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>modal</code></td>
+<td>9000</td>
+</tr>
+<tr>
+<td><code>backdrop</code></td>
+<td>8000</td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td>1000</td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>underlay</code></td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sizes">Sizes</h2>
+<p>Sizing tokens describe the dimensions of elements. Accessed via <code>map(sizes, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xsmall</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>0.75rem</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>1.5rem</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>3rem</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>4.5rem</td>
+</tr>
+</tbody>
+</table>
+<h2 id="spacing">Spacing</h2>
+<p>Spacing tokens describe the distance between elements. Accessed via <code>map(spaces, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xsmall</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>0.5rem</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>1rem</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>1.5rem</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>3rem</td>
+</tr>
+<tr>
+<td><code>xxlarge</code></td>
+<td>4.5rem</td>
+</tr>
+</tbody>
+</table>
 
     
 
@@ -127,7 +392,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/hidden" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/hidden" data-pjax>
                 <span>Hidden</span>
                 
             </a>
@@ -153,7 +418,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/article" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/article" data-pjax>
                 <span>Article</span>
                 
             </a>
@@ -163,7 +428,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/author" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/author" data-pjax>
                 <span>Author</span>
                 
             </a>
@@ -173,7 +438,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/avatar" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/avatar" data-pjax>
                 <span>Avatar</span>
                 
             </a>
@@ -183,7 +448,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/button" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button" data-pjax>
                 <span>Button</span>
                 
             </a>
@@ -193,7 +458,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/comment" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/comment" data-pjax>
                 <span>Comment</span>
                 
             </a>
@@ -203,7 +468,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/comment-form" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/comment-form" data-pjax>
                 <span>Comment Form</span>
                 
             </a>
@@ -213,7 +478,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/continue" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/continue" data-pjax>
                 <span>Continue</span>
                 
             </a>
@@ -223,7 +488,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/field" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/field" data-pjax>
                 <span>Field</span>
                 
             </a>
@@ -233,7 +498,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/meta" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/meta" data-pjax>
                 <span>Meta</span>
                 
             </a>
@@ -243,7 +508,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/preface" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/preface" data-pjax>
                 <span>Preface</span>
                 
             </a>
@@ -253,7 +518,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/promo" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/promo" data-pjax>
                 <span>Promo</span>
                 
             </a>
@@ -263,7 +528,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search-form" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/search-form" data-pjax>
                 <span>Search Form</span>
                 
             </a>
@@ -273,7 +538,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/section" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/section" data-pjax>
                 <span>Section</span>
                 
             </a>
@@ -283,7 +548,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/summary" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/summary" data-pjax>
                 <span>Summary</span>
                 
             </a>
@@ -309,7 +574,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/banner" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/banner" data-pjax>
                 <span>Banner</span>
                 
             </a>
@@ -319,7 +584,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/contentinfo" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/contentinfo" data-pjax>
                 <span>Contentinfo</span>
                 
             </a>
@@ -329,7 +594,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/menu" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/menu" data-pjax>
                 <span>Menu</span>
                 
             </a>
@@ -339,7 +604,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/navigation" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/navigation" data-pjax>
                 <span>Navigation</span>
                 
             </a>
@@ -349,7 +614,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/search" data-pjax>
                 <span>Search</span>
                 
             </a>
@@ -359,7 +624,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/site-nav" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/site-nav" data-pjax>
                 <span>Site Nav</span>
                 
             </a>
@@ -369,7 +634,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/topics-nav" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/topics-nav" data-pjax>
                 <span>Topics Nav</span>
                 
             </a>
@@ -379,7 +644,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/traverse-nav" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/traverse-nav" data-pjax>
                 <span>Traverse Nav</span>
                 
             </a>
@@ -416,7 +681,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/grid--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/grid--default" data-pjax>
                 <span>Default</span>
                 
             </a>
@@ -426,7 +691,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/grid--authors" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/grid--authors" data-pjax>
                 <span>Authors</span>
                 
             </a>
@@ -457,7 +722,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/embed" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/embed" data-pjax>
                 <span>Embed</span>
                 
             </a>
@@ -467,7 +732,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/gallery" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/gallery" data-pjax>
                 <span>Gallery</span>
                 
             </a>
@@ -477,7 +742,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/note" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/note" data-pjax>
                 <span>Note</span>
                 
             </a>
@@ -498,7 +763,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/prose--default" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/prose--default" data-pjax>
                 <span>Default</span>
                 
             </a>
@@ -508,7 +773,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/prose--article" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/prose--article" data-pjax>
                 <span>Article</span>
                 
             </a>
@@ -523,7 +788,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/syntax" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/syntax" data-pjax>
                 <span>Syntax</span>
                 
             </a>
@@ -549,7 +814,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/article-template" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/article-template" data-pjax>
                 <span>Article Template</span>
                 
             </a>
@@ -570,7 +835,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-template--about" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/content-template--about" data-pjax>
                 <span>About</span>
                 
             </a>
@@ -580,7 +845,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-template--404" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/content-template--404" data-pjax>
                 <span>404</span>
                 
             </a>
@@ -606,7 +871,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/index-template--topics" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/index-template--topics" data-pjax>
                 <span>Topics</span>
                 
             </a>
@@ -616,7 +881,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/index-template--archives" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/index-template--archives" data-pjax>
                 <span>Archives</span>
                 
             </a>
@@ -626,7 +891,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/index-template--authors" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/index-template--authors" data-pjax>
                 <span>Authors</span>
                 
             </a>
@@ -652,7 +917,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/listing-template--home" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/listing-template--home" data-pjax>
                 <span>Home</span>
                 
             </a>
@@ -662,7 +927,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/listing-template--topic" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/listing-template--topic" data-pjax>
                 <span>Topic</span>
                 
             </a>
@@ -672,7 +937,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/listing-template--archive" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/listing-template--archive" data-pjax>
                 <span>Archive</span>
                 
             </a>
@@ -682,7 +947,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/listing-template--author" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/listing-template--author" data-pjax>
                 <span>Author</span>
                 
             </a>
@@ -692,7 +957,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/listing-template--search-results" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/listing-template--search-results" data-pjax>
                 <span>Search Results</span>
                 
             </a>
@@ -727,8 +992,8 @@
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/tokens" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Design tokens</span>
                 
             </a>
@@ -755,7 +1020,7 @@
 
 
 
-<script src="fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
+<script src="../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
 
 
 
