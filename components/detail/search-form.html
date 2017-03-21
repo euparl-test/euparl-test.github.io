@@ -53,10 +53,6 @@
 
     
     
-        
-        
-        
-    
 
 <div class="Pen" data-behaviour="pen" id="pen-09f18f165505c1644c90c9c455a77890">
 
@@ -83,23 +79,14 @@
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
             
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering component</h4>
-    <div class="Error-message Prose">
-        <p>(unknown path)
-  Template render error: (<p class="c-field c-field--combined">
-  <label class="c-field__label c-field__label--icon" for="q">{% include &quot;search.svg&quot; %}</label>
-  <input class="c-field__input" type="search" name="q" placeholder="e.g. CSS, Design, Research&#8230;"/>
-  {% render &quot;@button&quot;, { label: &quot;Search&quot;, submit: true } %}
-</p>
-)
-  Error: template not found: search.svg</p>
-
-    </div>
-    
-</div>
-
-            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/search-form"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
         </div>
         <div class="Preview-handle" data-role="resize-handle"></div>
         <div class="Preview-overlay"></div>
@@ -162,7 +149,17 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-09f18f165505c1644c90c9c455a77890-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><!-- Error rendering component:  --></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/search/"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-field c-field--combined"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-field__label c-field__label--icon"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"q"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-field__icon"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 200 200"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"c-field__icon--search"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"c-field__icon--search"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M129 121C136 113 140 102 140 90c0-28-22-50-50-50S40 63 40 90s22 50 50 50c12 0 24-4 32-12L158 164l7-7-36-36zM90 130c-22 0-40-18-40-40s18-40 40-40 40 18 40 40-18 40-40 40z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-field__input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"q"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"e.g. CSS, Design, Research&amp;#8230;"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></pre>
         
     </code>
 </div>
