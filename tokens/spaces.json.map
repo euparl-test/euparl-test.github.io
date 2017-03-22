@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["spaces.json"],"sourcesContent":["{\n  \"xsmall\": \"0.25rem\",\n  \"small\": \"0.5rem\",\n  \"medium\": \"1rem\",\n  \"large\": \"1.5rem\",\n  \"xlarge\": \"3rem\",\n  \"xxlarge\": \"4.5rem\"\n}\n"],"file":"spaces.json"}

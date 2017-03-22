@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["borders.json"],"sourcesContent":["{\n  \"width-thin\": \"1px\",\n  \"width-thick\": \"2px\",\n  \"width-thicker\": \"4px\",\n  \"width-thickest\": \"8px\",\n  \"radius-small\": \"0.125rem\",\n  \"radius-default\": \"0.25rem\",\n  \"radius-circle\": \"50%\"\n}\n"],"file":"borders.json"}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["sizes.json"],"sourcesContent":["{\n  \"xsmall\": \"0.25rem\",\n  \"small\": \"0.75rem\",\n  \"medium\": \"1.5rem\",\n  \"large\": \"3rem\",\n  \"xlarge\": \"4.5rem\"\n}\n"],"file":"sizes.json"}
