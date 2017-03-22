@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["layers.json"],"sourcesContent":["{\n  \"modal\": 9000,\n  \"backdrop\": 8000,\n  \"overlay\": 1000,\n  \"default\": 1,\n  \"underlay\": -1\n}\n"],"file":"layers.json"}

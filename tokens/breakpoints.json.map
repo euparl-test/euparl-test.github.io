@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["breakpoints.json"],"sourcesContent":["{\n  \"min\": \"280px\",\n  \"xsmall\": \"360px\",\n  \"small\": \"480px\",\n  \"medium\": \"504px\",\n  \"large\": \"800px\",\n  \"xlarge\": \"960px\",\n  \"max\": \"1280px\"\n}\n"],"file":"breakpoints.json"}
